@@ -1,0 +1,19 @@
+{
+  "conditions": [
+    {"id": "acs_rule_out", "name": "Acute coronary syndrome (rule out)", "weights": {"chest_pain": 3, "breathlessness": 2, "dizziness": 1, "weakness": 0.5}, "min_hits": 1, "checks": ["ECG immediately", "Pulse, BP, SpO2", "Refer urgently if ECG unavailable"]},
+    {"id": "lrti", "name": "Lower respiratory infection / pneumonia", "weights": {"cough": 2, "fever": 2, "breathlessness": 2, "phlegm": 1, "chest_pain": 1}, "min_hits": 2, "checks": ["Respiratory rate, SpO2, chest examination", "Chest X-ray if available"]},
+    {"id": "tb", "name": "Tuberculosis (screen)", "weights": {"cough": 2, "weight_loss": 2, "fever": 1, "loss_of_appetite": 1, "blood_in_sputum": 2, "weakness": 0.5}, "min_hits": 2, "duration": {"concept": "cough", "min_days": 14, "bonus": 2}, "checks": ["Sputum CBNAAT / Truenat", "Chest X-ray", "Refer to nearest TB centre"]},
+    {"id": "febrile_illness", "name": "Malaria / dengue / typhoid (febrile illness)", "weights": {"fever": 2, "high_fever": 2, "chills": 2, "headache": 1, "body_ache": 1, "rash": 1, "vomiting": 0.5, "weakness": 0.5}, "min_hits": 2, "checks": ["Malaria RDT / smear", "Dengue NS1 / IgM per season", "Typhoid testing per local guidance", "Platelet count if dengue suspected"]},
+    {"id": "urti", "name": "Upper respiratory tract infection", "weights": {"cold": 2, "sore_throat": 2, "cough": 1, "fever": 1, "headache": 0.5}, "min_hits": 2, "checks": ["Symptomatic care", "Review if fever persists beyond 3 days"]},
+    {"id": "gastroenteritis", "name": "Acute gastroenteritis", "weights": {"diarrhea": 2, "vomiting": 2, "abdominal_pain": 1, "nausea": 1, "fever": 0.5, "dehydration": 1}, "min_hits": 2, "checks": ["Assess hydration", "ORS, zinc in children", "Stool exam if blood or prolonged"]},
+    {"id": "uti", "name": "Urinary tract infection", "weights": {"burning_urination": 3, "frequent_urination": 2, "abdominal_pain": 0.5, "fever": 1, "back_pain": 1}, "min_hits": 1, "checks": ["Urine routine and microscopy", "Urine culture if recurrent"]},
+    {"id": "diabetes", "name": "Diabetes mellitus (screen)", "weights": {"excessive_thirst": 2, "frequent_urination": 2, "weight_loss": 1, "weakness": 1, "diabetes_history": 2}, "min_hits": 2, "checks": ["Random / fasting blood glucose", "HbA1c if available"]},
+    {"id": "hypertension", "name": "Hypertension", "weights": {"headache": 1, "dizziness": 1, "hypertension_history": 2, "chest_pain": 0.5}, "min_hits": 1, "checks": ["Measure BP on both arms, repeat after rest"]},
+    {"id": "anemia", "name": "Anaemia", "weights": {"weakness": 2, "dizziness": 2, "pregnancy": 1, "breathlessness": 1}, "min_hits": 2, "checks": ["Haemoglobin", "Peripheral smear", "Iron-folic acid per programme"]},
+    {"id": "hepatitis", "name": "Hepatitis / liver disease", "weights": {"jaundice": 3, "loss_of_appetite": 1, "fever": 1, "nausea": 1, "vomiting": 0.5, "abdominal_pain": 1}, "min_hits": 1, "checks": ["Liver function tests", "Hepatitis serology"]},
+    {"id": "gerd", "name": "Gastritis / acid reflux", "weights": {"acidity": 3, "abdominal_pain": 1, "nausea": 1, "vomiting": 0.5, "chest_pain": 0.5}, "min_hits": 1, "checks": ["Exclude cardiac cause if chest pain present", "Review diet, NSAID use"]},
+    {"id": "asthma_copd", "name": "Asthma / COPD", "weights": {"breathlessness": 2, "cough": 2, "phlegm": 1, "asthma_history": 2}, "min_hits": 2, "checks": ["SpO2, peak flow if available", "Wheeze on auscultation"]},
+    {"id": "musculoskeletal", "name": "Musculoskeletal pain", "weights": {"joint_pain": 2, "back_pain": 2, "body_ache": 1}, "min_hits": 1, "checks": ["Examine joints and spine", "Red flags: fever, weakness of limbs, incontinence"]},
+    {"id": "allergic", "name": "Allergic reaction / dermatitis", "weights": {"itching": 2, "rash": 2, "cold": 1, "eye_problem": 0.5}, "min_hits": 1, "checks": ["Identify trigger", "Check for swelling of lips, face or breathlessness"]}
+  ]
+}
