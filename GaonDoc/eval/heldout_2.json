@@ -1,0 +1,16 @@
+[
+  {"text": "mujhe pichle do din se bahut tez bukhar chadha hua hai", "symptoms": ["high_fever"], "denied": [], "flags": ["high_fever"]},
+  {"text": "meri maa ko seene mein bahut dard ho raha hai aur pasina aa raha hai", "symptoms": ["chest_pain"], "denied": [], "flags": ["chest_pain"]},
+  {"text": "bachche ko saans lene mein bahut takleef ho rahi hai", "symptoms": ["breathlessness"], "denied": [], "flags": ["breathlessness"]},
+  {"text": "gaon mein kisi ko saanp ne kaat liya", "symptoms": ["snake_bite"], "denied": [], "flags": ["snake_bite"]},
+  {"text": "dast lage hain aur kamzori bhi bahut hai", "symptoms": ["diarrhea", "weakness"], "denied": [], "flags": []},
+  {"text": "kal se sar mein dard hai aur chakkar bhi aa rahe hain", "symptoms": ["headache", "dizziness"], "denied": [], "flags": []},
+  {"text": "peshab mein bahut jalan hoti hai", "symptoms": ["burning_urination"], "denied": [], "flags": []},
+  {"text": "bukhar nahi hai par khansi bahut hai", "symptoms": ["cough"], "denied": ["fever"], "flags": []},
+  {"text": "teen hafte se khansi aur raat ko bukhar", "symptoms": ["cough", "fever"], "denied": [], "flags": ["cough_2_weeks"]},
+  {"text": "pet bahut dard kar raha hai aur ulti ho rahi hai", "symptoms": ["abdominal_pain", "vomiting"], "denied": [], "flags": []},
+  {"text": "usko mirgi ka daura aaya aur wo behosh ho gaya", "symptoms": ["seizure", "unconscious"], "denied": [], "flags": ["seizure", "unconscious"]},
+  {"text": "mere jodon me bahut dard hai aur ghutne sooj gaye hain", "symptoms": ["joint_pain", "swelling"], "denied": [], "flags": []},
+  {"text": "sans phool rahi hai aur chhati me dard hai", "symptoms": ["breathlessness", "chest_pain"], "denied": [], "flags": ["breathlessness", "chest_pain"]},
+  {"text": "mujhe zehar kha liya hai", "symptoms": ["poisoning"], "denied": [], "flags": ["poisoning"]}
+]
